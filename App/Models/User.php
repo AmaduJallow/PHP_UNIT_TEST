@@ -23,7 +23,7 @@ class User
     public function getLastName(){
         return $this->last_name;
     }
-    public function getFullName(){
+    public function getFullName():string{
         return trim(ucwords($this->first_name." ".$this->last_name));
 }
 public function setEmail($email){
@@ -36,8 +36,7 @@ public function getEmail(){
  public function getEmailVariables(){
     return (
         [
-        'full_name' => "$this->first_name $this->last_name",
-        'email' => "$this->email"
+         "$this->first_name $this->last_name","$this->email"
         ]
     );
     
