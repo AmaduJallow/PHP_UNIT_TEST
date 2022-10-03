@@ -4,9 +4,9 @@ namespace PHPUnit\Framework;
 class SampleTest extends TestCase
 {
     
-    public function testTrueAssertTrue(){
+    public function testTrueAssertToTrue(){
         
-        $this->assertFalse(false);
+        $this->assertTrue(true);
         
     }
 } 
